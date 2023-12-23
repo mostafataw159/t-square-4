@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/style.css">
+</head>
+<body style="background-color: rgb(235, 202, 202); font-family: monospace;" >
+
+    <div class="container ">
+        <div class="row ">
+            <div class="col-8 m-auto">
+         <h2 class="my-4 mt-5 text-center" style="color: blue;"> enter your info</h2>
+         <form>
+          <input type="text" placeholder="enter your info here" class="form-control my-3 " id="info">
+          <div class="row">
+          <div class="col-6 mb-3">
+          <select id="time" class="form-control">
+            <option> 7:00am</option>
+            <option> 9:00am</option>
+            <option> 11:00am</option>
+            <option> 1:00pm</option>
+            <option> 3:00pm</option>
+            <option> 5:00pm</option>
+            <option> 7:00pm</option>
+          </select>
+          </div>
+          <div class="col-6">
+          <select id="date" class="form-control">
+            <option>1/1</option>
+            <option>3/1</option>
+            <option>5/1</option>
+            <option>7/1</option>
+            <option>9/1</option>
+            <option>11/1</option>
+            <option>13/1</option>
+          </select>
+        </div>
+    </div>
+    <div class="col-12">
+        <input type="text" placeholder="enter any notes" class="form-control p-3 mb-3" id="note">
+    </div>
+          <input type="submit" value="transform" class="btn btn-info btn-block">
+         </form>
+<div class="col-12">
+         <table class="table table-dark mt-5 table-striped table-hover">
+            <thead >
+                <th>info</th>
+                <th>time</th>
+                <th>date</th>
+                <th>notes</th>
+            </thead>
+            <tbody id="result">
+
+            </tbody>
+         </table>
+</div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="js/main.js"></script>
+</body>
+</html>
